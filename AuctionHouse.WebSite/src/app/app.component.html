@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="layout-wrapper">
+  <div class="topbar clearfix">
+    <div class="topbar-left">
+      <div class="logo">AUCTION HOUSE</div>
+    </div>
+    <div class="topbar-right">
+      <a id="menu-button"><i class="fa-icon fa fa-fw fa-chevron-right"></i></a>
+      <div style="float:right">
+        <p-button label="Sign In" icon="fa fa-sign-in" iconPos="right" styleClass="ui-button-secondary"></p-button>
+      </div>
+    </div>
+  </div>
+  <div class="layout-menu">
+    <p-scrollPanel styleClass="menu-scroll-panel">
+      <div class="profile">
+        <span>Profile pic, etc.</span>
+      </div>
+      <div style="margin-top: 16px">
+      <p-panelMenu [model]="items"></p-panelMenu>
+    </div>
+    </p-scrollPanel>
+  </div>
+  <div class="layout-main">
+    <div class="layout-content">
+    <p-panel header="PAGE CONTENT">
+      <span>This is where the page content will go!</span>
+    </p-panel>
+  </div>
+  </div>
+</div>
