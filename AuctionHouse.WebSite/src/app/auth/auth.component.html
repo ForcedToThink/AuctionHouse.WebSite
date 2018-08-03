@@ -1,0 +1,27 @@
+<div *appShowAuthed="false">
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12">
+            <div class="ui-inputgroup">
+                <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+                <input type="text" pInputText [(ngModel)]="username" placeholder="Username">         
+            </div>
+        </div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12">
+            <div class="ui-inputgroup">
+                <span class="ui-inputgroup-addon"><i class="fa fa-key"></i></span>
+                <input type="password" pInputText [(ngModel)]="password" placeholder="Password">
+            </div>
+        </div>
+    </div>
+
+    <p-button label="Sign In" (onClick)="login()"></p-button>
+</div>
+
+<div *appShowAuthed="true">
+    <h3>You are signed in :)</h3>
+    <p-button label="Sign Out" (onClick)="logout()"></p-button>
+</div>
+
+<p-toast></p-toast>

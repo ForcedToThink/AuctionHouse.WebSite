@@ -124,3 +124,14 @@ body {
 .menu-scroll-panel .ui-scrollpanel-bar-x {
     display: none;
 }
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 5em;
+}
+
+.user-greeting {
+    display: block;
+    margin-top: .5em;
+}

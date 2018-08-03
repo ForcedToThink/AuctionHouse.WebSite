@@ -1,0 +1,9 @@
+<p-scrollPanel styleClass="menu-scroll-panel">
+        <div class="profile" *appShowAuthed="true">
+          <img src="../../../assets/default-user-profile-picture.png" class="profile-picture">
+          <span class="user-greeting">{{userName}}</span>
+        </div>
+        <div style="margin-top: 16px">
+        <p-panelMenu [model]="items"></p-panelMenu>
+      </div>
+      </p-scrollPanel>
