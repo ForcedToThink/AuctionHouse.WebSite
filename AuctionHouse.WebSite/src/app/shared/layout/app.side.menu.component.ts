@@ -5,15 +5,15 @@ import { Router } from '@angular/router';
 
 @Component ({
     selector: 'app-side-menu',
-    templateUrl: 'app.side.menu.component.html'
+    templateUrl: 'app.side.menu.component.html',
+    styleUrls: ['./app.side.menu.component.css']
 })
 export class SideMenuComponent implements OnInit {
     items: MenuItem[];
     userName: string;
 
     constructor(
-      private userService: UserService,
-      private router: Router
+      private userService: UserService
     ) {}
 
     ngOnInit() {

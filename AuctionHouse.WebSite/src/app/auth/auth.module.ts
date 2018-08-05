@@ -3,17 +3,23 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared';
 import { AuthComponent } from './auth.component';
 import { RouterModule } from '@angular/router';
+import { RegisterComponent } from './register.component';
 
 const authRouting: ModuleWithProviders = RouterModule.forChild([
     {
         path: 'auth',
         component: AuthComponent
+    },
+    {
+        path: 'signup',
+        component: RegisterComponent
     }
 ]);
 
 @NgModule({
     declarations: [
-        AuthComponent
+        AuthComponent,
+        RegisterComponent
     ],
     imports: [
         CommonModule,

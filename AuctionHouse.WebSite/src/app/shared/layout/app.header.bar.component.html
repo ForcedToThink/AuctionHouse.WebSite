@@ -6,6 +6,7 @@
         <a id="menu-button"><i class="fa-icon fa fa-fw fa-chevron-right"></i></a>
         <div style="float:right">
             <p-button *appShowAuthed="false" label="Sign In" icon="fa fa-sign-in" iconPos="right" styleClass="ui-button-secondary" (onClick)="goToAuth()"></p-button>
+            <p-button *appShowAuthed="true" label="Sign Out" icon="fa fa-sign-out" iconPos="right" styleClass="ui-button-secondary" (onClick)="logout()"></p-button>
         </div>
     </div>
 </div>

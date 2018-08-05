@@ -59,6 +59,14 @@ export class UserService {
             .map((data) => data);
     }
 
+    public register(registerModel: Object): Observable<User> {
+        return this.api.post('/account/register', registerModel)
+            .map(data => {
+                this.setAuth(data);
+                return data;
+            });
+    }
+
     public purgeAuth() {
         this.sessionService.destroyToken();
         this.currentUserSubject.next(new User);

@@ -1,0 +1,82 @@
+<h2>Sign Up</h2>
+<div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-3"></div>
+        <div class="ui-g-2 grid-control-label">
+            <span>Username:</span>
+        </div>
+        <div class="ui-g-3">
+            <div class="ui-inputgroup">
+                <input type="text" pInputText [(ngModel)]="login" placeholder="Username">         
+            </div>
+        </div>
+        <div class="ui-g-4"></div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-3"></div>
+        <div class="ui-g-2 grid-control-label">
+            <span>Email:</span>
+        </div>
+        <div class="ui-g-3">
+            <div class="ui-inputgroup">
+                <input type="text" pInputText [(ngModel)]="email" placeholder="Email">
+            </div>
+        </div>
+        <div class="ui-g-4"></div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-3"></div>
+        <div class="ui-g-2 grid-control-label">
+            <span>First name:</span>
+        </div>
+        <div class="ui-g-3">
+            <div class="ui-inputgroup">
+                <input type="text" pInputText [(ngModel)]="firstName" placeholder="First name">
+            </div>
+        </div>
+        <div class="ui-g-4"></div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-3"></div>
+        <div class="ui-g-2 grid-control-label">
+            <span>Last name:</span>
+        </div>
+        <div class="ui-g-3">
+            <div class="ui-inputgroup">
+                <input type="text" pInputText [(ngModel)]="lastName" placeholder="Last name">
+            </div>
+        </div>
+        <div class="ui-g-4"></div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-3"></div>
+        <div class="ui-g-2 grid-control-label">
+            <span>Password:</span>
+        </div>
+        <div class="ui-g-3">
+            <div class="ui-inputgroup">
+                <input type="password" pInputText [(ngModel)]="password" placeholder="Password">
+            </div>
+        </div>
+        <div class="ui-g-4"></div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-3"></div>
+        <div class="ui-g-2 grid-control-label">
+            <span>Confirm password:</span>
+        </div>
+        <div class="ui-g-3">
+            <div class="ui-inputgroup">
+                <input type="password" pInputText [(ngModel)]="confirmPassword" placeholder="Confirm password">
+            </div>
+        </div>
+        <div class="ui-g-4"></div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-5"></div>
+        <div class="ui-g-3" style="text-align: right; margin-right: 10px;">
+            <p-button label="Sign Up" (onClick)="register()"></p-button>
+        </div>
+        <div class="ui-g-4"></div>
+    </div>
+</div>

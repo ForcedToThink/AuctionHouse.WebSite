@@ -135,3 +135,8 @@ body {
     display: block;
     margin-top: .5em;
 }
+
+.grid-control-label {
+    text-align: right;
+    margin-right: 10px;
+}

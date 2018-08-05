@@ -9,6 +9,7 @@ import { DialogModule } from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { ToastModule } from 'primeng/toast';
+import { AccordionModule } from 'primeng/accordion';
 import { ShowAuthedDirective } from './show-authed.directive';
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ShowAuthedDirective } from './show-authed.directive';
         InputTextModule,
         PasswordModule,
         FormsModule,
-        ToastModule
+        ToastModule,
+        AccordionModule
     ],
     exports: [
         CommonModule,
@@ -36,7 +38,8 @@ import { ShowAuthedDirective } from './show-authed.directive';
         PasswordModule,
         FormsModule,
         ShowAuthedDirective,
-        ToastModule
+        ToastModule,
+        AccordionModule
     ]
 })
 export class SharedModule {}
